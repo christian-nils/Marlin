@@ -163,7 +163,7 @@
 #define Z_DRIVER_TYPE TMC2209
 // #define X2_DRIVER_TYPE A4988
 // #define Y2_DRIVER_TYPE A4988
-// #define Z2_DRIVER_TYPE TMC2209
+// #define Z2_DRIVER_TYPE A4988
 // #define Z3_DRIVER_TYPE A4988
 // #define Z4_DRIVER_TYPE A4988
 // #define I_DRIVER_TYPE  A4988
@@ -1403,7 +1403,7 @@
 #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 // Force the use of the probe for Z-axis homing
-// #define USE_PROBE_FOR_Z_HOMING
+#define USE_PROBE_FOR_Z_HOMING
 
 /**
  * Z_MIN_PROBE_PIN
@@ -1850,9 +1850,9 @@
 // @section motion
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false
+#define INVERT_X_DIR true
 #define INVERT_Y_DIR false
-#define INVERT_Z_DIR false
+#define INVERT_Z_DIR true
 // #define INVERT_I_DIR false
 // #define INVERT_J_DIR false
 // #define INVERT_K_DIR false
